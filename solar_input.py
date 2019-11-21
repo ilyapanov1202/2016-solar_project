@@ -49,7 +49,7 @@ def parse_star_parameters(line, star):
     """
     sex = line.split()
     star.R = float(sex[1])
-    star.color = float(sex[2])
+    star.color = (sex[2])
     star.m = float(sex[3])
     star.x = float(sex[4])
     star.y = float(sex[5])
