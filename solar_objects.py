@@ -9,7 +9,7 @@ class Star:
     """
     def __init__(self):
 
-        type = "star"
+        self.type = "star"
         """Признак объекта звезды"""
         
         self.m = 0
@@ -50,7 +50,7 @@ class Planet:
     """
     def __init__(self):
 
-        type = "planet"
+        self.type = "planet"
         """Признак объекта планеты"""
     
         self.m = 0
