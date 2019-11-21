@@ -38,7 +38,7 @@ def execution():
     for body in space_objects:
         update_object_position(space, body)
     physical_time += time_step.get()
-    displayed_time.set("%.1f" % (physical_time / 10) + " * 10^3 seconds gone")
+    displayed_time.set("%.1f" % (physical_time * 10) + " * 10^3 seconds gone")
 
     if perform_execution:
         space.after(101 - int(time_speed.get()), execution)
