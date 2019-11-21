@@ -95,9 +95,9 @@ def write_space_objects_data_to_file(output_filename, space_objects):
     """
     with open(output_filename, 'w') as out_file:
         for i in range(len(space_objects)):  # DONE
-            print(out_file, space_objects[i].type, ' ', space_objects[i].R, ' ', space_objects[i].color, ' ',
+            print(space_objects[i].type, ' ', space_objects[i].R, ' ', space_objects[i].color, ' ',
                   space_objects[i].m, ' ', space_objects[i].x, ' ', space_objects[i].y, ' ',
-                  space_objects[i].Vx, ' ', space_objects[i].Vy)
+                  space_objects[i].Vx, ' ', space_objects[i].Vy, file=out_file)
 
 
 # FIXME: хорошо бы ещё сделать функцию, сохранающую статистику в заданный файл...
